@@ -39,7 +39,7 @@ To retrieve a specific version:
 #*************************************************************************
 
 package Rcs::Parser;
-$Rcs::Parser::VERSION = '0.05';
+$Rcs::Parser::VERSION = '0.06';
 
 use 5.006;
 use Sort::Versions;
@@ -267,7 +267,7 @@ This method returns an array or arrayref of all versions stored in the RCS file.
 sub all_versions {
   my $self = shift @_;
   unless ( defined $self->{all_versions} ) {
-    $self->{all_versions} = [ reverse sort versioncmp grep !/(header|desc)/, keys %{$self->{rcs}} ];
+    $self->{all_versions} = [ sort { versioncmp($b,$a) } grep !/(header|desc)/, keys %{$self->{rcs}} ];
   }
   return wantarray ? @{$self->{all_versions}} : $self->{all_versions};
 }
@@ -552,13 +552,16 @@ CVS.
 
 =head1 BUGS AND SOURCE
 
-	Bug tracking for this module: https://rt.cpan.org/Ticket/Display.html?id=92644
+	Bug tracking for this module: https://rt.cpan.org/Dist/Display.html?Name=Rcs-Parser
 
 	Source hosting: http://www.github.com/bennie/perl-Rcs-Parser
 
-=head1 AUTHORSHIP
+=head1 VERSION
 
-    Rcs::Parser v0.05 (2014/02/20)
+    Rcs::Parser v0.06 (2014/02/21)
+
+=head1 COPYRIGHT
+
     (c) 2001-2014, Phillip Pollard <bennie@cpan.org>
 
 =head1 LICENSE
