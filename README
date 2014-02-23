@@ -1,5 +1,5 @@
 
-            Rcs::Parser - Parse and analyze RCS files - v0.06
+            Rcs::Parser - Parse and analyze RCS files - v0.07
 
 ================================================================================
 SYNOPSIS
@@ -58,7 +58,7 @@ ERATTA
 AUTHORSHIP
 ================================================================================
 
-    Rcs::Parser v0.06 (2014/02/21)
+    Rcs::Parser v0.07 (2014/02/22)
 
     (c) 2001-2014, Phillip Pollard <bennie@cpan.org>
     Released under the Perl Artistic License

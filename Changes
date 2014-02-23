@@ -1,5 +1,10 @@
 Revision history for Perl extension Rcs::Parser.
 
+0.07  2014/02/22
+
+	Including the Artistic 2.0 license as LICENSE
+	Updating meta: perl base, provdies, resources and correct license
+
 0.06  2014/02/21
 
 	Corrected sorting error in all_versions() (RT #92644)
@@ -10,7 +15,6 @@ Revision history for Perl extension Rcs::Parser.
 	Added a unit test for all_versions()
 	Updated META.yaml and Makefile.PL with dependencies
 	Corrected version info throuought documentation and code
-	Added proper license data
 
 0.03  2008/10/23
 
