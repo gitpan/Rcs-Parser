@@ -39,9 +39,9 @@ To retrieve a specific version:
 #*************************************************************************
 
 package Rcs::Parser;
-$Rcs::Parser::VERSION = '0.07';
+$Rcs::Parser::VERSION = '0.08';
 
-use 5.006;
+use 5.006001;
 use Sort::Versions;
 use warnings;
 use strict;
@@ -558,7 +558,7 @@ CVS.
 
 =head1 VERSION
 
-    Rcs::Parser v0.07 (2014/02/22)
+    Rcs::Parser v0.08 (2014/03/09)
 
 =head1 COPYRIGHT
 
